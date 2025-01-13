@@ -1,8 +1,8 @@
 // src/contexts/AppContext.tsx
 
 import React, { createContext, useContext, useState } from "react";
-import { useDragAndDrop, DragData } from "../hooks/useDragAndDrop";
-import { Canvas, CanvasElement, SelectedElement, User } from "../types/types";
+import { useDragAndDrop } from "../hooks/useDragAndDrop";
+import { Canvas, CanvasElement, DragData, SelectedElement, User } from "../types/types";
 
 interface AppContextProps {
   handleDragStart: (data: DragData) => void;
@@ -58,6 +58,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
   const updateUserEditing = (elementId: string | undefined) => {
     // Implement the logic for updating user editing here
+    console.log(elementId)
   };
 
   return (

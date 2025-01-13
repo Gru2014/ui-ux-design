@@ -1,5 +1,4 @@
 import React from 'react';
-import { useAppContext } from '../../contexts/AppContext';
 
 export const users = [
   {
@@ -23,7 +22,6 @@ export const users = [
 ];
 
 const RealTimeCollaboration: React.FC = () => {
-  const { selectedElement } = useAppContext();
 
   return (
     <div className="absolute inset-0 pointer-events-none">
